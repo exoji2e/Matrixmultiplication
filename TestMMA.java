@@ -1,8 +1,8 @@
 import java.util.Random;
 public class TestMMA {
 	public static void main(String args[]) {
-		int size = 256;
-		int deg = 1;
+		int size = 4;
+		int deg = 1000;
 		Random r = new Random(37);
 		Polynomial A[][] = new Polynomial[size][size];
 		Polynomial B[][] = new Polynomial[size][size];
@@ -10,7 +10,7 @@ public class TestMMA {
 			for(int j = 0; j<size; j++) {
 				double[] koef = new double[deg];
 				for(int k = 0; k<deg; k++) {
-					koef[k] = (int)(r.nextDouble()*10);
+					koef[k] = r.nextDouble();
 				}
 				A[i][j] = new Polynomial(koef);
 				B[i][j] = new Polynomial(koef);
