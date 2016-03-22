@@ -1,4 +1,4 @@
-public class MMAs {
+public class MMAPolynomials {
 	public static Polynomial[][] ordinary(Polynomial[][] A, Polynomial[][] B, int n) {
 		Polynomial[][] ret = new Polynomial[n][n];
 		for(int i = 0 ; i<n; i++) {

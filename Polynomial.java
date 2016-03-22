@@ -1,4 +1,4 @@
-public class Polynomial extends MatrixElement {
+public class Polynomial {
 	private double[] kf;
 	public Polynomial(double [] arr) {
 		kf = new double[arr.length];

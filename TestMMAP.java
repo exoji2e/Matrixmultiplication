@@ -1,5 +1,5 @@
 import java.util.Random;
-public class TestMMA {
+public class TestMMAP {
 	public static void main(String args[]) {
 		int size = 4;
 		int deg = 1000;
@@ -25,10 +25,10 @@ public class TestMMA {
 		}*/
 		
 		long t = System.currentTimeMillis();
-		Polynomial C1[][] = MMAs.ordinary(A,B,size);
+		Polynomial C1[][] = MMAPolynomials.ordinary(A,B,size);
 		System.out.println(System.currentTimeMillis() - t);
 		t = System.currentTimeMillis();
-		Polynomial C2[][] = MMAs.strassen(A,B,size);
+		Polynomial C2[][] = MMAPolynomials.strassen(A,B,size);
 		System.out.println(System.currentTimeMillis() - t);
 		/*System.out.println("\n C1:");
 		for(int i = 0; i<size; i++) {
