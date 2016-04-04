@@ -1,5 +1,6 @@
 import java.util.Arrays;
 public class Polynomial {
+	private final long MINDEG = 512;
 	private double[] kf;
 	int deg;
 	Karatsuba kar = new Karatsuba();
@@ -106,12 +107,9 @@ public class Polynomial {
 
 
 	public Polynomial karatsuba(Polynomial g){
-
-		// Task1
-		if (deg < 2 && g.deg < 2){
-			double r[] = {kf[0]*g.kf[0]};
-			return new Polynomial(r);
-			//return f.multiply(g);
+		//Tast 1
+		if(deg<MINDEG) {
+			return this.multiply(g);
 		}
 
 		// Task2
