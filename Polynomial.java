@@ -1,5 +1,6 @@
 import java.util.Arrays;
 public class Polynomial {
+	private final long MINDEG = 512;
 	private double[] kf;
 	int deg;
 	Karatsuba kar = new Karatsuba();
@@ -94,41 +95,37 @@ public class Polynomial {
 		double[] part1 = new double[size];
 		System.arraycopy(array, 0, part1, 0, part1.length);
 		return part1;
-}
+	}
 
 
-// returna andra halvan av polynomet, size är fortfarande storleken på första halvan... De borde väl iofs vara lika.
-private double[] partLow(double[] array, int size) {
-	double[] part2 = new double[array.length-size];
-	System.arraycopy(array, size, part2, 0, part2.length);
-	return part2;
-}
+	// returna andra halvan av polynomet, size är fortfarande storleken på första halvan... De borde väl iofs vara lika.
+	private double[] partLow(double[] array, int size) {
+		double[] part2 = new double[array.length-size];
+		System.arraycopy(array, size, part2, 0, part2.length);
+		return part2;
+	}
 
 
 	public Polynomial karatsuba(Polynomial g){
-		Polynomial f = new Polynomial(kf);
-
-		// Task1
-		if (f.deg < 2 && g.deg < 2){
-			double r[] = {(double)kar.karMult((long) f.kf[0], (long) g.kf[0])};
-			return new Polynomial(r);
-			//return f.multiply(g);
+		//Tast 1
+		if(deg<MINDEG) {
+			return this.multiply(g);
 		}
 
 		// Task2
-		int n = Math.max(f.deg,g.deg);
+		int n = Math.max(deg,g.deg);
 		int n2 = n / 2;
 
 		//Task3
-		Polynomial F1 = new Polynomial(partHigh(f.kf,n2));
-		Polynomial F0 = new Polynomial(partLow(f.kf,f.deg-n2));
+		Polynomial F1 = new Polynomial(partHigh(kf,n2));
+		Polynomial F0 = new Polynomial(partLow(kf,deg-n2));
 		Polynomial G1 = new Polynomial(partHigh(g.kf,n2));
 		Polynomial G0 = new Polynomial(partLow(g.kf,g.deg-n2));
 
 
-		Polynomial F0G0 = new Polynomial(F0.karatsuba(G0).kf);
-		Polynomial F1G1 = new Polynomial(F1.karatsuba(G1).kf);
-		Polynomial W = new Polynomial((F0.add(F1)).karatsuba(G0.add(G1)).kf);
+		Polynomial F0G0 = F0.karatsuba(G0);
+		Polynomial F1G1 = F1.karatsuba(G1);
+		Polynomial W = (F0.add(F1)).karatsuba(G0.add(G1));
 
 		//Task4
 
