@@ -1,0 +1,89 @@
+Degree: 2^0 pkar.equals(pmul):true
+multiply/karatsuba = 0.4
+karatsuba = 5000
+multiply = 2000
+---------
+Degree: 2^1 pkar.equals(pmul):true
+multiply/karatsuba = 1.0
+karatsuba = 1000
+multiply = 1000
+---------
+Degree: 2^2 pkar.equals(pmul):true
+multiply/karatsuba = 0.3333333333333333
+karatsuba = 3000
+multiply = 1000
+---------
+Degree: 2^3 pkar.equals(pmul):true
+multiply/karatsuba = 1.6666666666666667
+karatsuba = 3000
+multiply = 5000
+---------
+Degree: 2^4 pkar.equals(pmul):true
+multiply/karatsuba = 1.9
+karatsuba = 10000
+multiply = 19000
+---------
+Degree: 2^5 pkar.equals(pmul):true
+multiply/karatsuba = 1.2857142857142858
+karatsuba = 42000
+multiply = 54000
+---------
+Degree: 2^6 pkar.equals(pmul):true
+multiply/karatsuba = 1.183206106870229
+karatsuba = 131000
+multiply = 155000
+---------
+Degree: 2^7 pkar.equals(pmul):true
+multiply/karatsuba = 0.9227799227799228
+karatsuba = 518000
+multiply = 478000
+---------
+Degree: 2^8 pkar.equals(pmul):true
+multiply/karatsuba = 1.0494944119212346
+karatsuba = 1879000
+multiply = 1972000
+---------
+Degree: 2^9 pkar.equals(pmul):true
+multiply/karatsuba = 0.04702768729641694
+karatsuba = 4912000
+multiply = 231000
+---------
+Degree: 2^10 pkar.equals(pmul):true
+multiply/karatsuba = 0.6838747099767981
+karatsuba = 1724000
+multiply = 1179000
+---------
+Degree: 2^11 pkar.equals(pmul):true
+multiply/karatsuba = 0.6733291692692067
+karatsuba = 4803000
+multiply = 3234000
+---------
+Degree: 2^12 pkar.equals(pmul):true
+multiply/karatsuba = 1.0733036987335403
+karatsuba = 11923000
+multiply = 12797000
+---------
+Degree: 2^13 pkar.equals(pmul):true
+multiply/karatsuba = 2.0115617544503577
+karatsuba = 27245000
+multiply = 54805000
+---------
+Degree: 2^14 pkar.equals(pmul):true
+multiply/karatsuba = 3.30135115595328
+karatsuba = 62243000
+multiply = 205486000
+---------
+Degree: 2^15 pkar.equals(pmul):true
+multiply/karatsuba = 5.356811655294148
+karatsuba = 151828000
+multiply = 813314000
+---------
+Degree: 2^16 pkar.equals(pmul):true
+multiply/karatsuba = 6.220685266631616
+karatsuba = 515449000
+multiply = 3206446000
+---------
+Degree: 2^17 pkar.equals(pmul):true
+multiply/karatsuba = 9.865580341998422
+karatsuba = 1382521000
+multiply = 13639372000

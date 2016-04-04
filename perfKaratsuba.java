@@ -8,10 +8,10 @@ public class perfKaratsuba {
 			double[] koef1 = new double[deg1];
 			double[] koef2 = new double[deg2];
 			for(int k = 0; k<deg1; k++) {
-				koef1[k] = (int)(r.nextDouble()*10);
+				koef1[k] = r.nextDouble();
 			}
 			for(int k = 0; k<deg2; k++) {
-				koef2[k] = (int)(r.nextDouble()*10);
+				koef2[k] = r.nextDouble();
 			}
 			Polynomial p1 = new Polynomial(koef1);
 			Polynomial p2 = new Polynomial(koef2);
