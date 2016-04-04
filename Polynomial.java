@@ -145,7 +145,7 @@ public class Polynomial {
 	public boolean equals(Polynomial p) {
 		if (p.deg != deg) return false;
 		for (int i = 0 ; i < deg ; i++){
-			if (p.kf[i] != kf[i]) return false;
+			if (Math.abs(p.kf[i] - kf[i]) > 0.00001) return false;
 		}
 		return true;
 
