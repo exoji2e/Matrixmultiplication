@@ -1,63 +1,18 @@
-Maxs-MacBook-Air:Karatsuba Max$ java main
-Degree: 10^0, working = true
-multiply/karatsuba = 0.25
----------
-Degree: 2^1, working = true
-multiply/karatsuba = 0.018867924528301886
----------
-Degree: 2^2, working = true
-multiply/karatsuba = 0.024390243902439025
----------
-Degree: 2^3, working = true
-multiply/karatsuba = 0.012987012987012988
----------
-Degree: 2^4, working = true
-multiply/karatsuba = 0.015025041736227046
----------
-Degree: 2^5, working = true
-multiply/karatsuba = 0.029239766081871343
----------
-Degree: 2^6, working = true
-multiply/karatsuba = 0.03263052208835342
----------
-Degree: 2^7, working = true
-multiply/karatsuba = 0.06410605030591435
----------
-Degree: 2^8, working = true
-multiply/karatsuba = 0.007667224817132281
----------
-Degree: 2^9, working = true
-multiply/karatsuba = 0.0066027088036117385
----------
-Degree: 2^10, working = true
-multiply/karatsuba = 0.013677737575649409
----------
-Degree: 2^11, working = true
-multiply/karatsuba = 0.01849112052554774
----------
-Degree: 2^12, working = true
-multiply/karatsuba = 0.02740367221880423
----------
-Degree: 2^13, working = true
-multiply/karatsuba = 0.06881681789596622
----------
-Degree: 2^14, working = true
-multiply/karatsuba = 0.12471936376794751
----------
-Degree: 2^15, working = true
-multiply/karatsuba = 0.18124143312891847
----------
-Degree: 2^16, working = true
-multiply/karatsuba = 0.2572368285871659
----------
-Degree: 2^17, working = true
-multiply/karatsuba = 0.3619635511881458
----------
-Degree: 2^18, working = true
-multiply/karatsuba = 0.4658524631082227
----------
-Degree: 2^19, working = true
-multiply/karatsuba = 0.9123107073472517
----------
-Degree: 2^20, working = true
-multiply/karatsuba = 1.258656687485112
+0 0.5 6000 3000
+1 0.5 2000 1000
+2 0.5 2000 1000
+3 2.0 3000 6000
+4 0.9 10000 9000
+5 0.9411764705882353 34000 32000
+6 0.9682539682539683 126000 122000
+7 0.8338983050847457 590000 492000
+8 1.0055668016194332 1976000 1987000
+9 0.049953314659197015 4284000 214000
+10 0.42502532928064846 1974000 839000
+11 0.6972437553832903 4644000 3238000
+12 1.2973513719512195 10496000 13617000
+13 1.9099577503003993 25799000 49275000
+14 3.0063169837935635 65221000 196075000
+15 5.55260949823796 148975000 827200000
+16 6.954571571132649 529096000 3679636000
+17 10.235850855415434 1547143000 15836325000
