@@ -1,5 +1,5 @@
 import java.util.Random;
-public class TestMMA {
+public class perfMMA {
 	public static void main(String args[]) {
 		int size = 2;
 		System.out.println("size\tordinarytime\tstrassentime");
